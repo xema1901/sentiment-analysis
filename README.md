@@ -1,0 +1,15 @@
+# Impact of Tesla News and Investor Sentiment on Stock Price 
+
+## Executive Summary 
+Stock price forecasting plays a pivotal role in the lives of investors and the planning of any business activity. In addition to historical prices and projections, it could also the society and its behavior affecting the stock prices. Understanding the mood and sentiment of the society might, therefore, aids in predicting these stock movements. Since opinions about various things, including companies, are expressed by people online every day, accessing these texts allows for analyzing the sentiment behind them and subsequently drawing meaningful insights from them.  
+One such application would be to predict the movement of stocks of a company. Tesla receives its fair share of mention in comments on Reddit and the news. Analyzing these comments and news pieces and comparing them would provide insights on their impact on the movement of stock, thus helping Tesla investors better place their money. 
+
+##Business Problem 
+Analyzing the impact of investors’ sentiment and news regarding Tesla on the movement of its stock price. 
+ 
+## Data Modeling and Observations 
+We performed a linear regression to understand how sentiments of investors and news change the stock price of Tesla. To build a statistically significant model, we used feature selection and created a few variables to study the impact on the stock price. After analyzing more than 40 variables, we found that the comparative sentiment of news has a more significant impact on the change in stock price. Analyzing the comments separately, we noticed that a negative comment increases stock price more than a positive comment. This is possibly due to such extraneous factors as too many people giving defensive comments during negative times. We studied the effect of relative sentiment on the stock price, i.e., whether the comments of investors have some differing impact. There was no real relationship; however, a more robust model could be built by formulating various combinations for the relative sentiment variable. Our final model showed that the neutral comments and polarity of negative comments have the highest impact on the change in stock price. 
+
+## Recommendations and Future Scope 
+As negative sentiments have a significant role to play in the change in stock price, we recommend that the investors use sentiments to predict the movement of stock and buy or sell accordingly. The investors should account for such qualitative behavioral factors in addition to various technical and fundamental factors that affect the movement of the stock price. 
+TextBlob API was used to extract sentiment polarity. We recommend using a more advanced model for sentiment analysis in the future, such as Microsoft Azure or Google cloud platform. This would give a more accurate polarity. The external factors affecting stock prices, such as market fluctuations, earnings reports, and policy decisions, could also be used to build a more robust model.
